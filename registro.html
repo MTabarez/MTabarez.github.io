@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <meta name="author" content="Marianne Tabarez">
+      <title>Registro</title>
+   </head>
+   <body>
+      <header id="header">
+         <a id="logo" href="index.html">
+         <span class="nombre-sitio">Games Website</span>
+         <span class="descripcion">Sitio de videojuegos</span>
+         </a>
+         <nav>
+            <ul>
+               <li><a href="index.html">Inicio</a></li>
+               <li><a href="juegos.html">Juegos</a></li>
+               <li><a class="active" href="registro.html">Registro</a></li>
+               <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+         </nav>
+      </header>
+      <h1>REGISTRO</h1>
+      <p>Para poder hacer compra de videojuegos usted debe estar registrado. Es necesario que indique un correo electrónico válido, ya que se le enviará un mensaje de confirmación para poder activar su cuenta.</p>
+      <form action=url">
+         <div>
+            <label>Nombre</label>
+            <br>
+            <input placeholder="Nombre" type="text" id="nombre" title="Máximo 30 caracteres" name="Nombre" maxlength="30" required>
+         </div>
+         <div>
+            <label>Apellido</label>
+            <br>
+            <input placeholder="Apellido" type="text" id="apellido" title="Máximo 30 caracteres" name="Apellido" maxlength="30" required>
+         </div>
+         <div>
+            <label>E-mail</label>
+            <br>
+            <input placeholder="E-mail" type="text" id="email" title="Escriba una dirección de correo electrónico válida" name="Email" required>
+         </div>
+         <div>
+            <label>Contraseña</label>
+            <br>
+            <input placeholder="Contraseña" type="pwd" id="pwd" minlength="8" maxlength="24" pattern="(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{8,24}" title="Debe contener al menos un número, una letra mayúscula, una letra minúscula y entre 8 y 24 caracteres" name="Contraseña" required> 
+         </div>
+         <div>
+            <label>Repetir Contraseña</label>
+            <br>
+            <input placeholder="Repetir Contraseña" type="pwd" id="pwd" minlength="8" maxlength="24" pattern="(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{8,24}" title="Debe contener al menos un número, una letra mayúscula, una letra minúscula y entre 8 y 24 caracteres" name="repetir-Contraseña" required> 
+         </div>
+         <div>
+            <input type="submit" value="Registrarme">
+         </div>
+      </form>
+      <footer>
+         <p>© 2018 Games Website</p>
+         <ul>
+            <li><a href="terminos.html">Términos y condiciones</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+         </ul>
+      </footer>
+   </body>
+</html>

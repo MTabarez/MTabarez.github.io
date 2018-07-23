@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <meta name="author" content="Marianne Tabarez">
+      <title>Contacto</title>
+   </head>
+   <body>
+      <header id="header">
+         <a id="logo" href="index.html">
+         <span class="nombre-sitio">Games Website</span>
+         <span class="descripcion">Sitio de videojuegos</span>
+         </a>
+         <nav>
+            <ul>
+               <li><a href="index.html">Inicio</a></li>
+               <li><a href="juegos.html">Juegos</a></li>
+               <li><a href="registro.html">Registro</a></li>
+               <li><a class="active" href="contacto.html">Contacto</a></li>
+            </ul>
+         </nav>
+      </header>
+      <h1>CONTACTO</h1>
+      <p>Si necesita consultar sobre alguno de nuestros productos o realizar una sugerencia, puede contactarnos a través del siguiente formulario.</p>
+      <form action=url">
+         <div>
+            <label>Nombre completo</label>
+            <br>
+            <input placeholder="Nombre completo" type="text" id="nombre" title="Escriba su nombre completo" name="Nombre" required>
+         </div>
+         <div>
+            <label>E-mail</label>
+            <br>
+            <input placeholder="E-mail" type="text" id="email" title="Escriba una dirección de correo electrónico válida" name="Email" required>
+         </div>
+         <div>
+            <label>Tipo de mensaje</label>
+            <br>
+            <select id="grupos" name="grupos">
+               <option selected>Consulta</option>
+               <option>Sugerencia</option>
+               <option>Reclamo</option>
+            </select>
+         </div>
+         <div>
+            <label>Mensaje</label>
+            <br>
+            <textarea cols="30" rows="10" placeholder="Mensaje" type="text" id="mensaje" title="Escriba su mensaje" name="mensaje" required></textarea>
+         </div>
+         <input type="submit" value="Enviar mensaje">
+         </div>
+      </form>
+      <footer>
+         <p>© 2018 Games Website</p>
+         <ul>
+            <li><a href="terminos.html">Términos y condiciones</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+         </ul>
+      </footer>
+   </body>
+</html>
