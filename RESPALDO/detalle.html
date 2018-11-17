@@ -3,15 +3,25 @@
    <head>
       <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
       <meta name="author" content="Marianne Tabarez">
-      <title>Rimworld</title>
-      <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">  
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
-      <link rel="stylesheet" type="text/css" href="css/style.css">   
-
+      <title>Detalle</title>
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+      <style type="text/css">
+         .container {
+         width: 100%;
+         height: 400px;
+         background-image: url("img/img_001.jpg");
+         background-size: cover;
+         background-repeat: no-repeat;
+         background-position: 50% 50%;
+         text-align: center;
+         vertical-align: middle;
+         line-height: 400px;                
+         }​
+      </style>
    </head>
    <body>
-
-            <!-- header -->
+     <!-- header -->
 
       <header id="header">
          
@@ -24,44 +34,20 @@
             <a href="registro.html">Registro</a>
             <a href="contacto.html">Contacto</a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                  <i class="fa fa-bars"></i>
-            </a>
+    <i class="fa fa-bars"></i>
+  </a>
          </div>
       </header>
 
             <!--fin header-->
 
-            <!--content-->
+             <!--content-->
 
             <div class="content">
 
-            <!--título-->
-
-      <div>
-         <h1> RIMWORLD </h1>
+      <div class="container">
+         <h1> NOMBRE DEL JUEGO </h1>
       </div>
-
-            <!--fin título-->
-
-            <!--presentación videojuego-->    
-
-      
-      <!--div>
-         <span>
-            <iframe width="100%" height="512" src="https://www.youtube.com/embed/866pKJDoHj4" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
-         </span>
-         <span>
-            <img src="img/rimworld_banner.jpg" alt="Rimworld">
-         </span>
-      </div-->
-
-
-
-            <!--fin presentación videojuego-->
-
-            <!--descripción videojuego-->
-
-            
       <div>
          <h3>Valoración: 10</h3>
          <h3>Categoría: Aventuras, RPG, Acción</h3>
@@ -74,9 +60,6 @@
          <p>Morbi iaculis euismod feugiat. Nam ut accumsan nunc. Cras eu est a leo efficitur facilisis vitae in ex. Sed vestibulum at purus et ultricies. Maecenas magna lacus, fermentum vel elementum eget, imperdiet ut augue. Phasellus id purus non felis viverra elementum et malesuada sapien. Ut a diam vel sapien commodo vehicula. Integer molestie lorem sit amet nibh venenatis malesuada. Sed varius risus tincidunt molestie laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam cursus diam et magna volutpat blandit. Aenean in fermentum nisi, nec interdum est. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
          </p>
       </div>
-
-            <!--fin descripción videojuego-->
-
       <div>
          <span><img src="img/img_002.jpg" alt="preview" style="width:33%"></span>           
          <span><img src="img/img_002.jpg" alt="gameplay" style="width:33%"></span>
@@ -86,28 +69,15 @@
       <p>
          <a href="juegos.html">
             ← Volver al listado de juegos
-            </a>
       </p>
-   </div>
-      <!--FIN content-->
-
       <footer>
       <p>© 2018 Games Website</p>
       <ul>
       <li><a href="terminos.html">Términos y condiciones</a></li>
       <li><a href="contacto.html">Contacto</a></li>
       </ul>
-      </footer>      
-      
-      <script>
-      function myFunction() {
-            var x = document.getElementById("myTopnav");
-            if (x.className === "topnav") {
-                  x.className += " responsive";
-            } else {
-                  x.className = "topnav";
-            }
-      }
-      </script>
+      </footer>
+   </div>
+   <!-- fin content -->
    </body>
 </html>

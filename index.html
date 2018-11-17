@@ -5,13 +5,14 @@
       <meta name="author" content="Marianne Tabarez">
       <title>Games Website</title>
       <link rel="stylesheet" type="text/css" href="css/style.css">
-      <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">      
+      <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet"> 
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+           
    </head>
    <body>
       <!-- header -->
 
       <header id="header">
-         
          <div class="topnav" id="myTopnav">
             <a id="logo" href="index.html"  >
                <span class="nombre-sitio">Games Website</span>               
@@ -21,15 +22,15 @@
             <a href="registro.html">Registro</a>
             <a href="contacto.html">Contacto</a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
+              <i class="fa fa-bars"></i>
+            </a>
          </div>
       </header>
 
             <!--fin header-->
 
-      <h1>Game Website</h1>
-      <img src="img/img_004.jpeg" alt="preview" style="width:100%">
+      <h2>Destacados de la semana</h2>
+      <!--img src="img/img_004.jpeg" alt="preview" style="width:100%">
       <h2>Destacados de la semana</h2>
          <ul>
             <li><a href="detalle.html"><img src="img/img_002.jpg" alt="preview" style="width:100%"></a></li>               
@@ -80,15 +81,166 @@
             <li>Categoría: Aventuras, RPG, Acción</li>
             <li>Precio: 59 US$</li>
             <li><button type="button"><a href="contacto.html"> Comprar</a></button></li>
-           </ul>
-      <footer>
-         <p>© 2018 Games Website</p>
-         <ul>
-            <li><a href="terminos.html">Términos y condiciones</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-         </ul>
+           </ul-->
+
+
+
+          <!--inicio slider -->
+
+           <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img src="img/img_002.jpg" style="width:100%">
+              <div class="text">
+                <ul>            
+                  <li>Nombre</li>
+                  <li>Valoración: 10</li>
+                  <li>Categoría: Aventuras, RPG, Acción</li>
+                  <li>Precio: 59 US$</li>
+                  
+                </ul>
+                
+              </div>
+
+              <div class="nobackground">
+                  <li>
+                      <button type="button" class="boton" onclick="location.href='detalle.html';">Comprar</button>
+                    </li>
+              </div>
+              
+            </div>
+            
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="img/img_002.jpg" style="width:100%">
+                <div class="text">
+                  <ul>            
+                    <li>Nombre</li>
+                    <li>Valoración: 10</li>
+                    <li>Categoría: Aventuras, RPG, Acción</li>
+                    <li>Precio: 59 US$</li>
+                    
+                  </ul>
+                  
+                </div>
+  
+                <div class="nobackground">
+                    <li>
+                        <button type="button" class="boton" onclick="location.href='detalle.html';">Comprar</button>
+                      </li>
+                </div>
+                
+              </div>
+            
+              <div class="mySlides fade">
+                  <div class="numbertext">1 / 3</div>
+                  <img src="img/img_002.jpg" style="width:100%">
+                  <div class="text">
+                    <ul>            
+                      <li>Nombre</li>
+                      <li>Valoración: 10</li>
+                      <li>Categoría: Aventuras, RPG, Acción</li>
+                      <li>Precio: 59 US$</li>
+                      
+                    </ul>
+                    
+                  </div>
+    
+                  <div class="nobackground">
+                      <li>
+                          <button type="button" class="boton" onclick="location.href='detalle.html';">Comprar</button>
+                        </li>
+                  </div>
+                  
+                </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+            
+          <!--end slider -->
+          <!--inicio gallery slider -->
+
+          <div style="justify-content: center; display: flex">
+              <div class="gallery">
+                <a target="_blank" href="detalle.html">
+                  <img src="img/img_002.jpg" alt="foto1" width="600" height="400">
+                </a>
+                <div class="desc">Add a description of the image here</div>
+              </div>
+              
+              <div class="gallery">
+                <a target="_blank" href="detalle.html">
+                  <img src="img/img_002.jpg" alt="foto2" width="600" height="400">
+                </a>
+                <div class="desc">Add a description of the image here</div>
+              </div>
+              
+              <div class="gallery">
+                <a target="_blank" href="detalle.html">
+                  <img src="img/img_002.jpg" alt="foto3" width="600" height="400">
+                </a>
+                <div class="desc">Add a description of the image here</div>
+              </div>
+            
+          </div>
+            
+            <!--end gallery slider -->
+
+
+
+      <footer class="footer">
+        <p>© 2018 Games Website <a href="terminos.html">Términos y condiciones</a> <a href="contacto.html">Contacto</a></p>
+         
+         
       </footer>
     </div>
     <!-- fin content -->
+    <script>
+      function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                  x.className += " responsive";
+            } else {
+                  x.className = "topnav";
+            }
+      }
+
+      var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+      </script>
    </body>
 </html>
