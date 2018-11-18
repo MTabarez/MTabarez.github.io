@@ -5,24 +5,24 @@
       <meta name="author" content="Marianne Tabarez">
       <title>Registro</title>
       <link rel="stylesheet" type="text/css" href="css/style.css">
-      <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet"> 
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    </head>
    <body>
       <!-- header -->
 
       <header id="header">
-         
-         <div class="topnav" id="myTopnav">
+         <div class="topnav" id="navegacion">
             <a id="logo" href="index.html"  >
                <span class="nombre-sitio">Games Website</span>               
             </a>
             <a href="index.html">Inicio</a>
             <a href="juegos.html">Juegos</a>
-            <a class="active" href="registro.html">Registro</a>
+            <a href="registro.html" class="active">Registro</a>
             <a href="contacto.html">Contacto</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
+            <a href="javascript:void(0);" class="icon" onclick="abrirMenu()">
+              <i class="fa fa-bars"></i>
+            </a>
          </div>
       </header>
 
@@ -34,7 +34,9 @@
 
       <h1>REGISTRO</h1>
       <p>Para poder hacer compra de videojuegos usted debe estar registrado. Es necesario que indique un correo electrónico válido, ya que se le enviará un mensaje de confirmación para poder activar su cuenta.</p>
+      <div class="form">
       <form action="gracias.html" method="post">
+         <fieldset>            
          <div>
             <label>Nombre</label>
             <br>
@@ -63,16 +65,18 @@
          <div>
             <input type="submit" value="Registrarme">
          </div>
+         </fieldset>
       </form>
-      <footer>
-         <p>© 2018 Games Website</p>
-         <ul>
-            <li><a href="terminos.html">Términos y condiciones</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-         </ul>
-      </footer>
+      </div>     
    </div>
 <!-- fin content-->
-
+<!--inicio footer -->
+<div>
+      <footer class="footer">
+        <p>© 2018 Games Website <a href="terminos.html">Términos y condiciones</a> <a href="contacto.html">Contacto</a></p>     
+      </footer>
+</div>
+            <!--fin footer -->
+<script src="js/script.js"></script>
    </body>
 </html>

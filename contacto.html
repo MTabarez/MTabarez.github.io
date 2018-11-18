@@ -6,71 +6,76 @@
       <title>Contacto</title>
       <link rel="stylesheet" type="text/css" href="css/style.css">
       <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    </head>
    <body>
       <!-- header -->
-
       <header id="header">
-         
-         <div class="topnav" id="myTopnav">
+         <div class="topnav" id="navegacion">
             <a id="logo" href="index.html"  >
-               <span class="nombre-sitio">Games Website</span>               
+            <span class="nombre-sitio">Games Website</span>               
             </a>
             <a href="index.html">Inicio</a>
             <a href="juegos.html">Juegos</a>
             <a href="registro.html">Registro</a>
-            <a class="active" href="contacto.html">Contacto</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
+            <a href="contacto.html" class="active">Contacto</a>
+            <a href="javascript:void(0);" class="icon" onclick="abrirMenu()">
+            <i class="fa fa-bars"></i>
+            </a>
          </div>
       </header>
-
-            <!--fin header-->
-
-             <!--content-->
-
-            <div class="content">
-
-      <h1>CONTACTO</h1>
-      <p>Si necesita consultar sobre alguno de nuestros productos o realizar una sugerencia, puede contactarnos a través del siguiente formulario.</p>
-      <form action="gracias.html" method="post">
+      <!--fin header-->
+      <!--content-->
+      <div class="content">
+         <h1>CONTACTO</h1>
+         <p>Si necesita consultar sobre alguno de nuestros productos o realizar una sugerencia, puede contactarnos a través del siguiente formulario.</p>
          <div>
-            <label>Nombre completo</label>
-            <br>
-            <input placeholder="Nombre completo" type="text" id="nombre" title="Escriba su nombre completo" name="Nombre" required>
+            <div class="form" >
+               <form action="gracias.html" method="post">
+                  <fieldset>
+                     <legend>Datos personales</legend>
+                     <div>
+                        <label>Nombre completo</label>
+                        <br>
+                        <input placeholder="Nombre completo" type="text" id="nombre" title="Escriba su nombre completo" name="Nombre" required>
+                     </div>
+                     <div>
+                        <label>E-mail</label>
+                        <br>
+                        <input placeholder="E-mail" type="text" id="email" title="Escriba una dirección de correo electrónico válida" name="Email" required>
+                     </div>
+                  </fieldset>
+                  <fieldset>
+                     <legend>Escriba su mensaje</legend>
+                     <div>
+                        <label>Tipo de mensaje</label>
+                        <br>
+                        <select id="grupos" name="grupos">
+                           <option selected>Consulta</option>
+                           <option>Sugerencia</option>
+                           <option>Reclamo</option>
+                        </select>
+                     </div>
+                     <div>
+                        <label>Mensaje</label>
+                        <br>
+                        <textarea cols="30" rows="10" placeholder="Mensaje" id="mensaje" title="Escriba su mensaje" name="mensaje" required></textarea>
+                     </div>
+                  </fieldset>
+                  <div>
+                     <input type="submit" class="botonconfirmar" value="Enviar mensaje">
+                  </div>
+               </form>
+            </div>
+            </div>
          </div>
-         <div>
-            <label>E-mail</label>
-            <br>
-            <input placeholder="E-mail" type="text" id="email" title="Escriba una dirección de correo electrónico válida" name="Email" required>
-         </div>
-         <div>
-            <label>Tipo de mensaje</label>
-            <br>
-            <select id="grupos" name="grupos">
-               <option selected>Consulta</option>
-               <option>Sugerencia</option>
-               <option>Reclamo</option>
-            </select>
-         </div>
-         <div>
-            <label>Mensaje</label>
-            <br>
-            <textarea cols="30" rows="10" placeholder="Mensaje" type="text" id="mensaje" title="Escriba su mensaje" name="mensaje" required></textarea>
-         </div>
-         <input type="submit" value="Enviar mensaje">
-         </div>
-      </form>
-      <footer>
-         <p>© 2018 Games Website</p>
-         <ul>
-            <li><a href="terminos.html">Términos y condiciones</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-         </ul>
-      </footer>
-   
-</div>
-<!-- fin content -->
-</body>
+         <!--inicio footer -->
+         <footer class="footer">
+            <p>© 2018 Games Website <a href="terminos.html">Términos y condiciones</a> <a href="contacto.html">Contacto</a></p>
+         </footer>
+         <!--fin footer -->
+      </div>
+      <!-- fin content -->
+      <script src="js/script.js"></script>
+   </body>
 </html>
