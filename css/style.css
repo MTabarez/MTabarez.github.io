@@ -58,7 +58,7 @@ button {
   top: 0;
   width: 100%;
   overflow: hidden;
-  background-color: #333;
+  background-color: #494f5c;
   padding: 10px;
   box-shadow: -1px 5px 18px #1c1c1c;
 }
@@ -271,6 +271,9 @@ img {
  * ------------------------------------ INFO JUEGO SLIDER --------------------------------
  */
 
+
+
+
 .text {
   color: #f2f2f2;
   font-size: 15px;
@@ -342,6 +345,10 @@ img {
   }
 }
 
+.aParent {
+    display: flex;
+    margin-right: : 20px; 
+}
 
 /*
  * ------------------------------------ GALERIA JUEGOS --------------------------------
@@ -369,6 +376,7 @@ div.desc {
 }
 
 
+
 /*
  * ------------------------------------ BUTTON --------------------------------
  */
@@ -394,6 +402,37 @@ div.desc {
   color: white;
 }
 
+/*
+ * ------------------------------------ DIV DETALLES --------------------------------
+ */
+
+ .detallewrapper {
+    color: #494f5c;
+    background-color: #1b1e1b;   
+    float: left;
+    width: 25%;
+    padding: 20px 60px;
+}
+
+.rowwrapper:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media only screen and (max-width: 600px) {
+  .detallewrapper {
+    color: #494f5c;
+    background-color: #1b1e1b;
+    padding: 20px 30px;
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+.rowwrapper:after {
+    clear: both;
+}
+}
 
 /*
  * ------------------------------------ DIV DESCRIPCIÓN --------------------------------
@@ -404,30 +443,68 @@ div.desc {
   color: #494f5c;
   width: 100%; 
   margin: 0;
-  padding: 50px 100px;  
+  padding: 50px 100px;
+  clear: both;  
+}
+
+@media only screen and (max-width: 600px) {
+
+    .descripcionwrapper {
+      background-color: #e4e7ed;
+      color: #494f5c;
+      width: 100%; 
+      margin: 0;
+      padding: 50px 30px;  
+    }
 }
 
 /*
  * ------------------------------------ SLIDER + INFO DETALLE JUEGOS-------------------------------
  */
 
-.infojuego {
-  position: relative;
-  }
+.detallejuegos {
+  display: table-row;
+}
 
-.left-column {
-   
-  background-color: pink;
-   }
+.imagenesjuego {
+  width: 60%;
+  display: table-cell;
+  padding-right: 50px;
+}
 
-.right-column {
+.dotslider {
+  text-align:center;
+}
+
+.preciojuego {
+  width: 30%;
+  display: table-cell;
   position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  width: 50%;
-  background-color: teal;
- }
+  text-align: left;
+}
+
+@media screen and (max-width: 600px) {
+  .detallejuegos {
+  display: grid;
+}
+
+.imagenesjuego {
+  width: 100%;
+  display: grid;
+
+}
+
+.dotslider {
+  text-align:center;
+}
+
+.preciojuego {
+  width: 30%;
+  display: grid;
+  position: absolute;
+  text-align: center;
+}
+}
 
 /*
  * ------------------------------------ BOTÓN COMPRA --------------------------------
@@ -490,11 +567,47 @@ width: 100%;
 }
 
 .form input, textarea, select {
+  width: 100%;
   margin: 10px 0px;
   border-radius: 8px;
   border-style: none;
   padding: 10px 20px;
 }
+
+@media screen and (max-width: 480px) {
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+}
+
+/*
+ *--------------------------------IFRAME--------------------------
+ */
+
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+.embed-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 
 .footer a {}
 

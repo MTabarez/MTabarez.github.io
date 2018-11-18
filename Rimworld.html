@@ -12,8 +12,8 @@
       <!-- header -->
       <header id="header">
          <div class="topnav" id="navegacion">
-            <a id="logo" href="index.html"  >
-            <span class="nombre-sitio">Games Website</span>               
+            <a id="logo" href="index.html">
+            <span class="nombre-sitio">Games Website</span> 
             </a>
             <a href="index.html">Inicio</a>
             <a href="juegos.html">Juegos</a>
@@ -34,8 +34,8 @@
          <!--fin título-->
          <!--presentación videojuego-->
          <!--inicio slider -->
-         <div style="display: table-row;">
-            <div id="imagenesjuego" style="width: 60%; display: table-cell; padding-right: 50px;">
+         <div class="detallejuegos">
+            <div id="imagenesjuego" class="imagenesjuego">
                <div class="slider-container">
                   <div class="sliderhome fade">
                      <img src="img/Rimworld/desc_001.jpg" style="width:100%" alt="Rimworld">
@@ -67,7 +67,7 @@
                   <a class="next" onclick="cambioSlides(1)">&#10095;</a>
                </div>
                <br>
-               <div style="text-align:center">
+               <div class="dotslider">
                   <span class="dot" onclick="slideActual(1)"></span> 
                   <span class="dot" onclick="slideActual(2)"></span> 
                   <span class="dot" onclick="slideActual(3)"></span>
@@ -75,12 +75,11 @@
                </div>
                <!--fin slider -->           
             </div>
-            <div style="width: 30%; display: table-cell; position: absolute; text-align: left;">
-               <h3>Valoración: 10</h3>
-               <h3>Categoría: Aventuras, RPG, Acción</h3>
-               <h3>Precio: 59 US$</h3>
+            <div class="preciojuego">
+               <img src="img/Rimworld/rimworld_banner.jpg" alt="Rimworld" style="width: 100%">               
+               <div class="aParent"><h3>Precio: </h3><h3>$39.99 USD</h3></div>
                <button id="myBtn" class="botoncompra">Comprar</button>
-            </div>
+            </div>            
             <!-- MODAL COMPRA -->  
             <div id="myModal" class="modal">
                <div class="modal-content">
@@ -176,6 +175,28 @@
          <!--fin presentación videojuego-->         
       </div>
       <!-- FIN CLASS CONTENT DE PRUEBA-->
+      <!-- inicio DETALLES JUEGO -->
+         <div>
+         <div class="rowwrapper">
+           <div class="detallewrapper">
+             <h4>VALORACIÓN</h4>
+             <p>10</p>
+           </div>
+           <div class="detallewrapper">
+             <h4>GÉNERO</h4>
+             <p>Indie, Simulation, Strategy</p>
+           </div>
+           <div class="detallewrapper">
+             <h4>DEVELOPER</h4>
+             <p>Ludeon Studios</p>
+           </div>
+           <div class="detallewrapper">
+             <h4>PUBLISHER</h4>
+             <p>Ludeon Studios</p>
+           </div>
+         </div>
+      </div>
+      <!-- FIN DETALLES JUEGO -->
       <!--descripción videojuego-->
       <div>
          <div id="descripcion">
@@ -247,7 +268,7 @@
       <!--inicio footer -->
       <div>
          <footer class="footer">
-            <p>© 2018 Games Website <a href="terminos.html">Términos y condiciones</a> <a href="contacto.html">Contacto</a></p>
+            <p>© 2018 Games Website <a href="terminos.html">Términos y condiciones</a><a href="contacto.html">Contacto</a></p>
          </footer>
       </div>
       <!--fin footer -->   

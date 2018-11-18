@@ -2,10 +2,10 @@
 
 function abrirMenu() {
 	var x = document.getElementById("navegacion");
-	if (x.className === "navstyle") {
+	if (x.className === "topnav") {
 		x.className += " responsive";
 	} else {
-		x.className = "navstyle";
+		x.className = "topnav";
 	}
 }
 
