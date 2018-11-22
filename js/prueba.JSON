@@ -1,8 +1,0 @@
-
-           script
-
-           var contenidoJSON = [{"titulo" : "juego1", "imagen" : "img/foto1.jpg"}, {"titulo" : "juego2", "imagen" : "img/foto2.jpg"} 
-
-           document.getelemntbyID("contenido").innerhtml = "div class poronga p " 
-                                                        + contenidoJSON[0.titulo + "otras cosas img src=" + contenidoJSON[0.imagen
-                                                        + "cerrar el resto html"
