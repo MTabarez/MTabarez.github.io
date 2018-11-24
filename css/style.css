@@ -30,7 +30,7 @@ h3 {
   min-height: 80vh;
 }
 
-.backgroundimage1 {
+/*.backgroundimage1 {
   position: relative;
   width: 100%;
   display: grid;  
@@ -49,7 +49,7 @@ transform: scale(1.2);
 
 .backgroundimage1-inside {
   position: relative;
-  }
+  }*/
 
 .backgroundimage2 {
 background-image: url("img/The_Elder_Scrolls/tes_banner.jpg");
@@ -60,7 +60,7 @@ background-image: url("img/The_Elder_Scrolls/tes_banner.jpg");
 background-image: url("img/Rimworld/rimworld_banner.jpg")
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .content {
     width: 100%; 
     margin: 0;
@@ -80,7 +80,7 @@ background-image: url("img/Rimworld/rimworld_banner.jpg")
   display: flex;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .otrosjuegos {
     margin: 0;
     padding: 50px 30px;
@@ -275,7 +275,7 @@ button {
     color: white;
   }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
 .modal-content { 
   width: 80%;
 }
@@ -427,8 +427,6 @@ img {
   }
 }
 
-
-
 .aParent {
     display: flex;
     margin-right: 20px; 
@@ -465,7 +463,7 @@ height: 400px;
 }
 */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   .galeria {
   margin: 20px 0px;
   border: 1px solid #ccc;
@@ -552,7 +550,7 @@ height: 400px;
 }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   .detallewrapper {
     padding: 20px 30px;
     float: none;
@@ -577,7 +575,7 @@ height: 400px;
   clear: both;  
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
 
     .descripcionwrapper {
       background-color: #e4e7ed;
@@ -613,7 +611,7 @@ height: 400px;
   text-align: left;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .detallejuegos {
   display: block;
 }
@@ -706,7 +704,7 @@ width: 100%;
   padding: 10px 20px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .form {
     margin: 0px;
   width: 100%;
@@ -742,22 +740,4 @@ width: 100%;
     display: block;
     text-align: center;
   }
-}
-
-/*
- *--------------------------------IFRAME--------------------------
- */
-
-.embed-container {
-    position: relative;
-    padding-bottom: 56.25%;
-    height: 0;
-    overflow: hidden;
-}
-.embed-container iframe {
-    position: absolute;
-    top:0;
-    left: 0;
-    width: 100%;
-    height: 100%;
 }

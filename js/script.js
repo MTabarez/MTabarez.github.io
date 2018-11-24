@@ -88,4 +88,11 @@ function leerMas() {
     }
 }
 
-/* --------------------------LEER MÁS CONTENIDO------------------------------------- */
+/* --------------------------VALIDACIONES------------------------------------- */
+function validarCoincidenPasswords(input) {
+    if (input.value != document.getElementById('pwd').value) {
+        input.setCustomValidity('Los passwords no coinciden.');
+    } else {
+        input.setCustomValidity('');
+    }
+}

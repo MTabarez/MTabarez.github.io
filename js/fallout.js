@@ -1,0 +1,14 @@
+var precioJuego = 29.99; 
+var contenido = {"titulo": "<h1> FALLOUT 4 </h1>", 
+            "valorPrecio" : "<h3>$29.99 USD</h3>", 
+            "contenidoDetalle":'<div class="detallewrapper"> <h4>VALORACIÓN</h4> <p>3</p> </div> <div class="detallewrapper"> <h4>GÉNERO</h4> <p>---</p> </div> <div class="detallewrapper"> <h4>DEVELOPER</h4> <p>Bethesda Game Studios</p> </div> <div class="detallewrapper"> <h4>PUBLISHER</h4> <p>Bethesda Softworks</p> </div>',
+            "descripcion": '<div class="descripcionwrapper"> <div> <h4>DESCRIPCIÓN</h4> <p><Bethesda Game Studios, the award-winning creators of Fallout 3 and The Elder Scrolls V: Skyrim, welcome you to the world of Fallout 4 – their most ambitious game ever, and the next generation of open-world gaming.</p> <p>As the sole survivor of Vault 111, you enter a world destroyed by nuclear war. Every second is a fight for survival, and every choice is yours. Only you can rebuild and determine the fate of the Wasteland. Welcome home.</p> <p><b>Features:</b></p><ul class="list"> <li><b>Freedom and Liberty!</b><br>Do whatever you want in a massive open world with hundreds of locations, characters, and quests. Join multiple factions vying for power or go it alone, the choices are all yours.</li> <li><b>You’re S.P.E.C.I.A.L!</b><br>Be whoever you want with the S.P.E.C.I.A.L. character system. From a Power Armored soldier to the charismatic smooth talker, you can choose from hundreds of Perks and develop your own playstyle. </li> <li><b>Super Deluxe Pixels!</b><br>An all-new next generation graphics and lighting engine brings to life the world of Fallout like never before. From the blasted forests of the Commonwealth to the ruins of Boston, every location is packed with dynamic detail. </li> <li><b>Violence and V.A.T.S.!</b><br>Intense first or third person combat can also be slowed down with the new dynamic Vault-Tec Assisted Targeting System (V.A.T.S) that lets you choose your attacks and enjoy cinematic carnage.</li> <li><b>Collect and Build!</b><br>Collect, upgrade, and build thousands of items in the most advanced crafting system ever. Weapons, armor, chemicals, and food are just the beginning - you can even build and manage entire settlements.</li></div>',
+            "fotos" : [{"foto1"  : '<img src="img/Fallout_4/desc_001.jpg" alt="Fallout_4">'},
+                        {"foto2" : '<img src="img/Fallout_4/desc_002.jpg" alt="Fallout_4">'},
+                        {"foto3" : '<img src="img/Fallout_4/desc_003.jpg" alt="Fallout_4">'},
+                        {"foto4" : '<img src="img/Fallout_4/desc_004.jpg" alt="Fallout_4">'},
+                        {"foto5" : '<img src="img/Fallout_4/desc_005.jpg" alt="Fallout_4">'},
+                        {"bannerPrecio" : '<img src="img/Fallout_4/fallout_banner.jpg" alt="Fallout_4" style="width: 100%">'}
+                    ]
+            
+            }

@@ -5,78 +5,74 @@
       <meta name="author" content="Marianne Tabarez">
       <title>Registro</title>
       <link rel="stylesheet" type="text/css" href="css/style.css">
-      <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet"> 
+      <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+      <meta name="viewport" content="width=device-width,initial-scale=1.0">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    </head>
    <body>
       <!-- header -->
-
       <header id="header">
          <div class="topnav" id="navegacion">
             <a id="logo" href="index.html"  >
-               <span class="nombre-sitio">Games Website</span>               
+            <span class="nombre-sitio">Games Website</span>               
             </a>
             <a href="index.html">Inicio</a>
             <a href="juegos.html">Juegos</a>
             <a href="registro.html" class="active">Registro</a>
             <a href="contacto.html">Contacto</a>
             <a href="javascript:void(0);" class="icon" onclick="abrirMenu()">
-              <i class="fa fa-bars"></i>
+            <i class="fa fa-bars"></i>
             </a>
          </div>
       </header>
-
-            <!--fin header-->
-
-             <!--content-->
-
-            <div class="content">
-
-      <h1>REGISTRO</h1>
-      <p>Para poder hacer compra de videojuegos usted debe estar registrado. Es necesario que indique un correo electrónico válido, ya que se le enviará un mensaje de confirmación para poder activar su cuenta.</p>
-      <div class="form">
-      <form action="gracias.html" method="post">
-         <fieldset>            
-         <div>
-            <label>Nombre</label>
-            <br>
-            <input placeholder="Nombre" type="text" id="nombre" title="Máximo 30 caracteres" name="Nombre" maxlength="30" required>
+      <!--fin header-->
+      <!--content-->
+      <div class="content">
+         <h1>REGISTRO</h1>
+         <p>Para poder hacer compra de videojuegos usted debe estar registrado. Es necesario que indique un correo electrónico válido, ya que se le enviará un mensaje de confirmación para poder activar su cuenta.</p>
+         <div class="form">
+            <form action="gracias.html" method="post">
+               <fieldset>
+                  <div>
+                     <label>Nombre</label>
+                     <br>
+                     <input placeholder="Nombre" type="text" id="nombre" title="Máximo 30 caracteres" name="Nombre" maxlength="30" required>
+                  </div>
+                  <div>
+                     <label>Apellido</label>
+                     <br>
+                     <input placeholder="Apellido" type="text" id="apellido" title="Máximo 30 caracteres" name="Apellido" maxlength="30" required>
+                  </div>
+                  <div>
+                     <label>E-mail</label>
+                     <br>
+                     <input placeholder="E-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" type="text" id="email" title="Escriba una dirección de correo electrónico válida" name="Email" required>
+                  </div>
+                  <div>
+                     <label>Contraseña</label>
+                     <br>
+                     <input placeholder="Contraseña" type="password" id="pwd" minlength="8" maxlength="24" pattern="(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{8,24}" title="Debe contener al menos un número, una letra mayúscula, una letra minúscula y entre 8 y 24 caracteres" name="Contraseña" required> 
+                  </div>
+                  <div>
+                     <label>Repetir Contraseña</label>
+                     <br>
+                     <input placeholder="Repetir Contraseña" type="password" id="pwd" minlength="8" maxlength="24" pattern="(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{8,24}" title="Debe contener al menos un número, una letra mayúscula, una letra minúscula y entre 8 y 24 caracteres" name="repetir-Contraseña" oninput="validarCoincidenPasswords(this)" required> 
+                  </div>
+                  <div>
+                     <input type="submit" value="Registrarme">
+                  </div>
+               </fieldset>
+            </form>
          </div>
-         <div>
-            <label>Apellido</label>
-            <br>
-            <input placeholder="Apellido" type="text" id="apellido" title="Máximo 30 caracteres" name="Apellido" maxlength="30" required>
-         </div>
-         <div>
-            <label>E-mail</label>
-            <br>
-            <input placeholder="E-mail" type="text" id="email" title="Escriba una dirección de correo electrónico válida" name="Email" required>
-         </div>
-         <div>
-            <label>Contraseña</label>
-            <br>
-            <input placeholder="Contraseña" type="password" id="pwd" minlength="8" maxlength="24" pattern="(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{8,24}" title="Debe contener al menos un número, una letra mayúscula, una letra minúscula y entre 8 y 24 caracteres" name="Contraseña" required> 
-         </div>
-         <div>
-            <label>Repetir Contraseña</label>
-            <br>
-            <input placeholder="Repetir Contraseña" type="password" id="pwd" minlength="8" maxlength="24" pattern="(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{8,24}" title="Debe contener al menos un número, una letra mayúscula, una letra minúscula y entre 8 y 24 caracteres" name="repetir-Contraseña" required> 
-         </div>
-         <div>
-            <input type="submit" value="Registrarme">
-         </div>
-         </fieldset>
-      </form>
-      </div>     
-   </div>
-<!-- fin content-->
-<!--inicio footer -->
-<div>
-      <footer class="footer">
-        <p>© 2018 Games Website <a href="terminos.html">Términos y condiciones</a> <a href="contacto.html">Contacto</a></p>     
-      </footer>
-</div>
-            <!--fin footer -->
-<script src="js/script.js"></script>
+      </div>
+      <!-- fin content-->
+      <!--inicio footer -->
+      <div>
+         <footer class="footer">
+            <p>© 2018 Games Website <a href="terminos.html">Términos y condiciones</a> <a href="contacto.html">Contacto</a></p>
+         </footer>
+      </div>
+      <!--fin footer -->
+      <script src="js/script.js"></script>
    </body>
 </html>

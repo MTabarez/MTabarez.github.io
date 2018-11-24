@@ -1,5 +1,5 @@
-              
-              var cantidad = 1, precio = 59, impuesto = 1.22, envio = 0, precioFinal = 0;
+/* --------------------------MODAL----------------------*/
+              var cantidad = 1, precio = precioJuego, impuesto = 1.22, envio = 0, precioFinal = 0;
                   
                   function mostrarEsPaypal(){
                     document.getElementById("esTarjeta").style.display = 'none';
@@ -20,7 +20,7 @@
                     document.getElementById("radioEsDigital").checked = false;
                   }
                   function recalcularPrecioFinal(){
-                    precioFinal = ((precio * cantidad) + envio ) * impuesto ;
+                    precioFinal = ((precio * cantidad) * impuesto) + envio ;
                     document.getElementById("labelPrecioFinal").innerHTML = precioFinal.toFixed(2);
                   }
                   function aumentarCantidad(){
@@ -63,7 +63,7 @@
                     labelEnvio.innerHTML = envio;
                   
                     recalcularPrecioFinal();
-                    labelPrecioFinal.innerHTML = precioFinal;
+                    labelPrecioFinal.innerHTML = precioFinal.toFixed(2);
                   
                     //Cantidad
                     var botonAumentarCantidad = document.getElementById("botonAumentarCantidad");
@@ -94,7 +94,7 @@
                           default:
                             envio = 0;
                       }
-                      labelEnvio.innerHTML = envio;
+                      labelEnvio.innerHTML = envio.toFixed(2);
                       recalcularPrecioFinal();
                     });
                   

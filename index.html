@@ -28,79 +28,78 @@
       <!--fin header-->
       <!--content-->
       <div class="content">
-         <div class="backgroundimage1">
-         <div class="backgroundimage1-inside">
-         <!--título-->
-         <h2>Destacados de la semana</h2>
-         <!-- fin titulo -->
-         <!--inicio slider -->
-         <div class="slider-container">
-            <div class="sliderhome fade">
-               <img src="img/Fallout_4/fallout_banner.jpg">
-               <div class="text">                             
+         <div>
+            <div>
+               <!--título-->
+               <h2>Destacados de la semana</h2>
+               <!-- fin titulo -->
+               <!--inicio slider -->
+               <div class="slider-container">
+                  <div class="sliderhome fade">
+                     <img src="img/Fallout_4/fallout_banner.jpg">
+                     <div class="text">                             
+                     </div>
+                     <div class="nobackground">
+                        <button type="button" class="boton" onclick="location.href='fallout.html';"><b>Ver más</b></button>
+                     </div>
+                  </div>
+                  <div class="sliderhome fade">
+                     <img src="img/The_Elder_Scrolls/tes_banner.jpg">
+                     <div class="text">                  
+                     </div>
+                     <div class="nobackground">
+                        <button type="button" class="boton" onclick="location.href='the_elder_scrolls.html';"><b>Ver más</b></button>
+                     </div>
+                  </div>
+                  <div class="sliderhome fade">
+                     <img src="img/Rimworld/rimworld_banner.jpg">
+                     <div class="text">
+                     </div>
+                     <div class="nobackground">
+                        <button type="button" class="boton" onclick="location.href='rimworld.html';"><b>Ver más</b></button>
+                     </div>
+                  </div>
+                  <a class="prev" onclick="cambioSlides(-1)">&#10094;</a>
+                  <a class="next" onclick="cambioSlides(1)">&#10095;</a>
                </div>
-               <div class="nobackground">
-                  <button type="button" class="boton" onclick="location.href='detalle.html';"><b>Ver más</b></button>
+               <br>
+               <div class="dotslider">
+                  <span class="dot" onclick="slideActual(1)"></span> 
+                  <span class="dot" onclick="slideActual(2)"></span> 
+                  <span class="dot" onclick="slideActual(3)"></span> 
                </div>
             </div>
-            <div class="sliderhome fade">
-               <img src="img/The_Elder_Scrolls/tes_banner.jpg">
-               <div class="text">                  
-               </div>
-               <div class="nobackground">
-                  <button type="button" class="boton" onclick="location.href='detalle.html';"><b>Ver más</b></button>
-               </div>
-            </div>
-            <div class="sliderhome fade">
-               <img src="img/Rimworld/rimworld_banner.jpg">
-               <div class="text">
-               </div>
-               <div class="nobackground">
-                  <button type="button" class="boton" onclick="location.href='rimworld.html';"><b>Ver más</b></button>
-               </div>
-            </div>
-            <a class="prev" onclick="cambioSlides(-1)">&#10094;</a>
-            <a class="next" onclick="cambioSlides(1)">&#10095;</a>
          </div>
-         <br>
-         <div class="dotslider">
-            <span class="dot" onclick="slideActual(1)"></span> 
-            <span class="dot" onclick="slideActual(2)"></span> 
-            <span class="dot" onclick="slideActual(3)"></span> 
-         </div>
-         </div>
-      </div>
          <!--fin slider -->
          <!--inicio galeria slider -->
          <div class="otrosjuegosgaleria">
             <div class="galeria">
-               <a target="_blank" href="detalle.html">
+               <a target="_self" href="kingdom_come.html">
                <img src="img/Kingdom_Come/kingdomcome_banner.jpg" alt="Kingdom Come: Deliverance">
                </a>
                <div class="desc">Kingdom Come: Deliverance</div>
             </div>
             <div class="galeria">
-               <a target="_blank" href="detalle.html">
+               <a target="_self" href="metal_gear_solid.html">
                <img src="img/Metal_Gear_Solid/mgs_banner.jpg" alt="Metal Gear Solid V: The Phantom Pain">
                </a>
                <div class="desc">Metal Gear Solid V: The Phantom Pain</div>
             </div>
             <div class="galeria">
-               <a target="_blank" href="detalle.html">
+               <a target="_self" href="europa_universalis_iv.html">
                <img src="img/Europa_Universalis_IV/europa_banner.jpg" alt="Europa Universalis IV">
                </a>
                <div class="desc">Europa Universalis IV</div>
             </div>
          </div>
          <!--fin galeria slider -->
-         </div>
-         <!--inicio footer -->
-         <footer class="footer">
-            <p>© 2018 Games Website <a href="terminos.html">Términos y condiciones</a> <a href="contacto.html">Contacto</a></p>
-         </footer>
-         <!--fin footer -->
-               </div>
-      
+      </div>
+      <!--inicio footer -->
+      <footer class="footer">
+         <p>© 2018 Games Website <a href="terminos.html">Términos y condiciones</a> <a href="contacto.html">Contacto</a></p>
+      </footer>
+      <!--fin footer -->
+      </div>
       <!-- fin content -->
       <script type="text/javascript" src="js/script.js"></script>
    </body>

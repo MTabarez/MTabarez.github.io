@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <meta name="author" content="Marianne Tabarez">
+      <title>Kingdom Come: Deliverance</title>
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+      <meta name="viewport" content="width=device-width,initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="js/kingdomCome.js"></script> 
+      <script src="js/cargarPorJson.js"></script> 
+   </head>
+   <body>
+      <!-- header -->
+      <header id="header">
+         <div class="topnav" id="navegacion">
+            <a id="logo" href="index.html">
+            <span class="nombre-sitio">Games Website</span> 
+            </a>
+            <a href="index.html">Inicio</a>
+            <a href="juegos.html">Juegos</a>
+            <a href="registro.html">Registro</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="javascript:void(0);" class="icon" onclick="abrirMenu()">
+            <i class="fa fa-bars"></i>
+            </a>
+         </div>
+      </header>
+      <!--fin header-->
+      <!--content-->
+      <div class="content">
+         <!--título-->
+         <div id="titulo">
+         </div>
+         <!--fin título-->
+         <!--presentación videojuego-->
+         <!--inicio slider -->
+         <div class="detallejuegos">
+            <div id="imagenesjuego" class="imagenesjuego">
+               <div class="slider-container">
+                  <div class="sliderhome fade">
+                     <div id="foto1"></div>
+                     <div class="nobackground">
+                     </div>
+                  </div>
+                  <div class="sliderhome fade">
+                     <div id="foto2"></div>
+                     <div class="nobackground">
+                     </div>
+                  </div>
+                  <div class="sliderhome fade">
+                     <div id="foto3"></div>
+                     <div class="nobackground">                     
+                     </div>
+                  </div>
+                  <div class="sliderhome fade">
+                     <div id="foto4"></div>
+                     <div class="nobackground">                     
+                     </div>
+                  </div>
+                  <div class="sliderhome fade">
+                     <div id="foto5"></div>
+                     <div class="nobackground">                     
+                     </div>
+                  </div>
+                  <a class="prev" onclick="cambioSlides(-1)">&#10094;</a>
+                  <a class="next" onclick="cambioSlides(1)">&#10095;</a>
+               </div>
+               <br>
+               <div class="dotslider">
+                  <span class="dot" onclick="slideActual(1)"></span> 
+                  <span class="dot" onclick="slideActual(2)"></span> 
+                  <span class="dot" onclick="slideActual(3)"></span>
+                  <span class="dot" onclick="slideActual(4)"></span>
+                  <span class="dot" onclick="slideActual(5)"></span> 
+               </div>
+               <!--fin slider -->           
+            </div>
+            <div class="preciojuego">
+               <div id="bannerPrecio"></div>
+               <div class="aParent">
+                  <h3>Precio: </h3>
+                  <div id="valorPrecio"></div>
+               </div>
+               <button id="myBtn" class="botoncompra"><b>Comprar</b></button>
+            </div>
+            <!-- MODAL COMPRA -->  
+            <div id="myModal" class="modal">
+               <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <p>COMPRAR JUEGO</p>
+                  <form action="gracias.html" method="post">
+                     <fieldset>
+                        <legend>Información personal:</legend>
+                        Nombre:<br>
+                        <input class="modalinput" type="text" name="name">
+                        <br>
+                        Email:<br>
+                        <input class="modalinput" type="text" name="name">
+                        <br>
+                     </fieldset>
+                     <fieldset>
+                        <legend>Medio de pago:</legend>
+                        Tarjeta
+                        <input type="radio" id="radioEsTarjeta" />
+                        Paypal
+                        <input type="radio" id="radioEsPaypal" />
+                        <div id="esTarjeta" style="display:none">
+                           Número:<br>
+                           <input class="modalinput" type="text" name="name">
+                           <br>
+                           CCV:<br>
+                           <input class="modalinput" type="text" name="name">
+                           <br>
+                           Dirección:<br>
+                           <input class="modalinput" type="text" name="name">
+                           <br>
+                           Ciudad:<br>
+                           <input class="modalinput" type="text" name="name">
+                           <br>
+                           Código postal:<br>
+                           <input class="modalinput" type="text" name="name">
+                           <br>
+                        </div >
+                        <div id="esPaypal" style="display:none">
+                           Usuario:<br>
+                           <input class="modalinput" type="text" name="name">
+                           <br>
+                           Password:<br>
+                           <input class="modalinput" type="password" name="name">
+                           <br>
+                        </div>
+                     </fieldset>
+                     <fieldset>
+                        <legend>Digital o físico:</legend>
+                        Digital
+                        <input type="radio" id="radioEsDigital" />
+                        Físico
+                        <input type="radio" id="radioEsFisico" />
+                        <div id="esFisico" style="display:none">
+                           Dirección:<br>
+                           <input class="modalinput" type="text" name="name">
+                           <br>
+                           Tipo de envío:<br>
+                           <select class="modalinput" id="comboTipoEnvio">
+                              <option value="comun">Elija una opción</option>
+                              <option value="comun">Común</option>
+                              <option value="especial">Especial</option>
+                              <option value="premium">Premium</option>
+                           </select>
+                        </div>
+                     </fieldset>
+                     <fieldset>
+                        <legend>Cantidad:</legend>
+                        <button type="button" class="botonmodal" id="botonAumentarCantidad">Agregar</button>
+                        <button type="button" class="botonmodal" id="botonReducirCantidad">Remover</button>
+                     </fieldset>
+                     <br/>             
+                     <fieldset>
+                        <legend>Detalle:</legend>
+                        Precio:
+                        <label id="labelPrecio">0</label><br/>
+                        Cantidad:
+                        <label id="labelCantidad" >0</label><br/>
+                        Envío:
+                        <label id="labelEnvio" >0</label><br/>
+                        Impuesto:
+                        <label id="labelImpuesto" >22%</label><br/>
+                        Precio Final:
+                        <label id="labelPrecioFinal" >0</label><br/>
+                     </fieldset>
+                     <br/> 
+                     <input type="submit" class="botonconfirmar" value="CONFIRMAR COMPRA">
+                  </form>
+               </div>
+            </div>
+            <!-- FIN MODAL COMPRA -->
+         </div>
+         <!--fin presentación videojuego-->         
+      </div>
+      <!-- FIN CLASS CONTENT DE PRUEBA-->
+      <!-- inicio DETALLES JUEGO -->
+      <div class="detallecontainer">
+         <div class="rowwrapper">
+            <div id="contenidoDetalle"></div>
+         </div>
+      </div>
+      <!-- FIN DETALLES JUEGO -->
+      <!--descripción videojuego-->
+      <div>
+         <div id="descripcion">
+         </div>
+      </div>
+      <!--fin descripción videojuego--> 
+      <!--otros juegos-->
+      <div class="otrosjuegos">
+         <h3>OTROS JUEGOS</h3>
+         <div class="otrosjuegosgaleria">
+            <div class="galeria">
+               <a target="_blank" href="fallout.html">
+               <img src="img/Fallout_4/fallout_banner.jpg" alt="Fallout 4">
+               </a>
+               <div class="desc">Fallout 4</div>
+            </div>
+            <div class="galeria">
+               <a target="_blank" href="the_elder_scrolls.html">
+               <img src="img/The_Elder_Scrolls/tes_banner.jpg" alt="The Elder Scrolls V: Skyrim">
+               </a>
+               <div class="desc">The Elder Scrolls V: Skyrim</div>
+            </div>
+            <div class="galeria">
+               <a target="_blank" href="europa_universalis_iv.html">
+               <img src="img/Europa_Universalis_IV/europa_banner.jpg" alt="Europa Universalis IV">
+               </a>
+               <div class="desc">Europa Universalis IV</div>
+            </div>
+         </div>
+      </div>
+      <!--</div> -->
+      <!--FIN content-->
+      <!--inicio footer -->
+      <div>
+         <footer class="footer">
+            <p>© 2018 Games Website <a href="terminos.html">Términos y condiciones</a><a href="contacto.html">Contacto</a></p>
+         </footer>
+      </div>
+      <!--fin footer -->   
+      <script src="js/script.js"></script>
+      <script src="js/modal.js"></script>   
+   </body>
+</html>
